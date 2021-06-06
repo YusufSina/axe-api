@@ -15,7 +15,9 @@
     "lint": "eslint src/**",
     "lint:watch": "esw --watch --color",
     "test:integration:mysql8": "cd ./tests/integrations && node index.js mysql8",
-    "test:integration:mysql57": "cd ./tests/integrations && node index.js mysql57"
+    "test:integration:mysql57": "cd ./tests/integrations && node index.js mysql57",
+    "test:integration:mariadb": "cd ./tests/integrations && node index.js mariadb",
+    "test:integration:postgres": "cd ./tests/integrations && node index.js postgres"
   },
   "dependencies": {
     "change-case": "^4.1.2",
@@ -47,6 +49,7 @@
     "jest": "^27.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
     "set-value": ">=4.0.0"
   }
 }
